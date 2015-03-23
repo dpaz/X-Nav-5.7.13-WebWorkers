@@ -2,7 +2,7 @@
 <html>
  <head>
   <title>Ejercicio con WebWorkers</title>
-  <script src="jquery-1.11.0.min.js"></script>
+  
  </head>
  <body>
   <form id="formulario" action="" method="POST">

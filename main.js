@@ -1,0 +1,25 @@
+
+
+$(document).ready(function(){
+
+	var worker = new Worker("worker.js");
+
+
+
+	$("#boton").click(function(){
+		numero = document.getElementById('formulario').input.value;
+		worker.postMessage(numero);
+		worker.onmessage = function(event) {
+			document.getElementById('result').innerHTML = event.data;
+			worker.terminate();
+		}
+
+	});
+
+
+})
+
+
+
+
+
